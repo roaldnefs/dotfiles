@@ -1,0 +1,7 @@
+# dotfiles
+
+## Installing
+
+```console
+$ make
+```

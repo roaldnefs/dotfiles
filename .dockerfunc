@@ -1,0 +1,10 @@
+#!/bin/zsh
+
+export DOCKER_REPO_PREFIX=roaldnefs
+
+valgrind(){
+	docker run -it --rm \
+		-v "$(pwd):/home/valgrind" \
+		-w /home/valgrind \
+		${DOCKER_REPO_PREFIX}/valgrind "$@"
+}
