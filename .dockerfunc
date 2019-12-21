@@ -8,3 +8,19 @@ valgrind(){
 		-w /home/valgrind \
 		${DOCKER_REPO_PREFIX}/valgrind "$@"
 }
+
+icmbuild(){
+	docker run -it --rm \
+		-v "$(pwd):/home/icmake" \
+		-w /home/icmake \
+		--entrypoint icmbuild \
+		${DOCKER_REPO_PREFIX}/icmake "$@"
+}
+
+icmstart(){
+	docker run -it --rm \
+		-v "$(pwd):/home/icmake" \
+		-w /home/icmake \
+		--entrypoint icmstart \
+		${DOCKER_REPO_PREFIX}/icmake "$@"
+}
