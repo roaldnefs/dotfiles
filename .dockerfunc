@@ -24,3 +24,18 @@ icmstart(){
 		--entrypoint icmstart \
 		${DOCKER_REPO_PREFIX}/icmake "$@"
 }
+
+cpp(){
+	docker run -it --rm \
+		-v "$(pwd):/home/cpp" \
+		-w /home/cpp \
+		--entrypoint /bin/bash \
+		${DOCKER_REPO_PREFIX}/cpp "$@"
+}
+
+# The hadolint container expects the Dockerfile to be piped to docker run
+hadolint(){
+    docker run -i --rm \
+        hadolint/hadolint \
+        < "$1"
+}

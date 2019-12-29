@@ -8,7 +8,7 @@ export ZSH="/Users/roald/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="minimal"
+ZSH_THEME="spaceship"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -102,5 +102,9 @@ export LANG=en_US.UTF-8
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+SPACESHIP_PROMPT_ADD_NEWLINE="false"
+SPACESHIP_PROMPT_SEPARATE_LINE="false"
+SPACESHIP_USER_SHOW="yes"
+SPACESHIP_EXEC_TIME_SHOW="false"
 
 source $HOME/.dockerfunc
