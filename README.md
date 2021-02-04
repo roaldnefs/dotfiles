@@ -1,8 +1,8 @@
 <p align="center">
     <a href="https://github.com/roaldnefs/dotfiles">
         <img src="https://github.com/jglovier/dotfiles-logo/blob/main/dotfiles-logo.png?raw=true"
-            alt=""
-            style="width: 250px;">
+            alt="dotfiles logo"
+            width="250px">
     </a>
 </p>
 <p align="center">
