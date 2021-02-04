@@ -1,10 +1,11 @@
 .PHONY: all
-all: dotfiles ## Install the dotfiles.
+all: shell ## Install all the dotfiles.
 
-.PHONY: dotfiles
-dotfiles: ## Install the dotfiles.
+.PHONY: shell
+shell: ## Install the shell related dotfiles.
 	ln -sfn $(CURDIR)/.zshrc $(HOME)/.zshrc;
 	ln -sfn $(CURDIR)/.dockerfunc $(HOME)/.dockerfunc;
+	ln -sfn $(CURDIR)/starship.toml $(HOME)/.config/starship.toml;
 
 .PHONY: help
 help:
