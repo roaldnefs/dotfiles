@@ -50,6 +50,21 @@ The minimal, blazing-fast, and infinitely customizable prompt for any shell!
 <br/>
 <br/>
 
+[<img align="left" height="94px" width="94px" alt="gitignore" src="https://avatars.githubusercontent.com/u/6523325"/>](https://github.com/roaldnefs/gitignore)
+
+[**gitignore**](https://github.com/roaldnefs/gitignore) \
+Tool for downloading `.gitignore` templates.
+<br/>
+<br/>
+<br/>
+
+[<img align="left" height="94px" width="94px" alt="gitignore" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Vimlogo.svg/544px-Vimlogo.svg.png"/>](https://github.com/roaldnefs/.vim)
+
+[**vim**](https://github.com/roaldnefs/.vim) \
+The ubiquitous text editor. The vim dotfiles are stored in a separate repository: [roaldnefs/.vim](https://github.com/roaldnefs/.vim)
+<br/>
+<br/>
+
 ## Installing
 The repository includes a **Makefile** to create all the required symbolic links using a simple command:
 
