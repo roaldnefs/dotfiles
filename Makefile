@@ -1,11 +1,15 @@
 .PHONY: all
-all: shell ## Install all the dotfiles.
+all: shell vim ## Install all the dotfiles.
 
 .PHONY: shell
 shell: ## Install the shell related dotfiles.
 	ln -sfn $(CURDIR)/.zshrc $(HOME)/.zshrc;
 	ln -sfn $(CURDIR)/.dockerfunc $(HOME)/.dockerfunc;
 	ln -sfn $(CURDIR)/starship.toml $(HOME)/.config/starship.toml;
+
+.PHONY: vim
+vim: ## Install the vim related dotfiles.
+	ln -sfn $(CURDIR)/.vimrc_personal $(HOME)/.vimrc_personal;
 
 .PHONY: help
 help:
