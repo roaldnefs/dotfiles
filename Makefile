@@ -9,6 +9,7 @@ shell: ## Install the shell related dotfiles.
 
 .PHONY: vim
 vim: ## Install the vim related dotfiles.
+	[ -d $(HOME)/.vim ] || git clone --recursive git@github.com:roaldnefs/.vim.git $(HOME)/.vim
 	ln -sfn $(CURDIR)/.vimrc_personal $(HOME)/.vimrc_personal;
 
 .PHONY: help
