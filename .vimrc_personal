@@ -1,9 +1,12 @@
-" Tell Vim we're using a dark background
+" Tell vim we're using a dark background.
 set bg=dark
 
 " Hightlight the 81st column on lines that go over the 80-character maximum.
 " Snippet taken from 'More Instantly Better Vim' as OSCON 2013, see:
-" https://www.youtube.com/watch?v=aHm36-na4-4
+"   https://www.youtube.com/watch?v=aHm36-na4-4
 highlight ColorColumn ctermbg=magenta
 call matchadd('ColorColumn', '\%81v', 100)
+
+" Turn hybrid line numbers.
+set number relativenumber
 
