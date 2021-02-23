@@ -1,5 +1,5 @@
 .PHONY: all
-all: shell vim ## Install all the dotfiles.
+all: shell git vim ## Install all the dotfiles.
 
 .PHONY: shell
 shell: ## Install the shell related dotfiles.
@@ -11,6 +11,10 @@ shell: ## Install the shell related dotfiles.
 vim: ## Install the vim related dotfiles.
 	[ -d $(HOME)/.vim ] || git clone --recursive git@github.com:roaldnefs/.vim.git $(HOME)/.vim
 	ln -sfn $(CURDIR)/.vimrc_personal $(HOME)/.vimrc_personal;
+
+.PHONY: git
+git: ## Install the git related dotfiles.
+	ln -sfn $(CURDIR)/.gitignore_global $(HOME)/.gitignore_global;
 
 .PHONY: help
 help:
