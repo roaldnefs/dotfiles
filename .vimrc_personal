@@ -1,10 +1,32 @@
-" Tell vim we're using a dark background.
+" Disable key movement in all modes
+noremap <Up> <Nop>
+noremap <Down> <Nop>
+noremap <Left> <Nop>
+noremap <Right> <Nop>
+
+" Tell vim we're using a dark background and set the dracula theme.
 set bg=dark
+color dracula
+
+" Airline
+let g:airline_theme = 'dracula'
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#tab_nr_type = 1
+let g:airline#extensions#branch#enabled = 1
+let g:airline_left_sep = ' '
+let g:airline_right_sep = ' '
+let g:airline_section_warning = ''
+let g:airline_section_y = ''
+let g:airline_section_x = ''
+set laststatus=2
+
+" NERDTree
+let NERDTreeQuitOnOpen=1
 
 " Hightlight the 81st column on lines that go over the 80-character maximum.
 " Snippet taken from 'More Instantly Better Vim' as OSCON 2013, see:
 "   https://www.youtube.com/watch?v=aHm36-na4-4
-highlight ColorColumn ctermbg=magenta
+highlight ColorColumn ctermbg=gray
 call matchadd('ColorColumn', '\%81v', 100)
 
 " Turn hybrid line numbers.
