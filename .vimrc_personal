@@ -6,7 +6,9 @@ noremap <Right> <Nop>
 
 " Tell vim we're using a dark background and set the dracula theme.
 set bg=dark
-color dracula
+let g:dracula_italic = 0
+colorscheme dracula
+highlight Normal ctermbg=None
 
 " Airline
 let g:airline_theme = 'dracula'
@@ -22,6 +24,7 @@ set laststatus=2
 
 " NERDTree
 let NERDTreeQuitOnOpen=1
+let NERDTreeShowHidden=1
 
 " Hightlight the 81st column on lines that go over the 80-character maximum.
 " Snippet taken from 'More Instantly Better Vim' as OSCON 2013, see:

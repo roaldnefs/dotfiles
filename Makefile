@@ -14,6 +14,7 @@ vim: ## Install the vim related dotfiles.
 
 .PHONY: tmux
 tmux: ## Install the tmux related dotfiles.
+	[ -d $(HOME)/.tmux/plugins/tpm ] || git clone https://github.com/tmux-plugins/tpm $(HOME)/.tmux/plugins/tpm
 	ln -sfn $(CURDIR)/.tmux.conf $(HOME)/.tmux.conf;
 
 .PHONY: git

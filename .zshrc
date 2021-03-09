@@ -1,7 +1,11 @@
 # Enable starship, a cross-shell, minimal, blazing-fast, and infinitely
 # customizable prompt. For more information see:
-#  https://starship.rs/
+# https://starship.rs/
 eval "$(starship init zsh)"
+
+# Enable zsh-autosuggestions, for more information see:
+# https://github.com/zsh-users/zsh-autosuggestions
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 source $HOME/.dockerfunc
 
@@ -9,11 +13,5 @@ source $HOME/.dockerfunc
 export GOPATH="$HOME/Go"
 export PATH="$PATH:$GOPATH/bin"
 
-# Python
-export PATH="/usr/local/opt/python@3.8/bin:$PATH"
-#export LDFLAGS="-L/usr/local/opt/python@3.8/lib"
-export PKG_CONFIG_PATH="/usr/local/opt/python@3.8/lib/pkgconfig"
+export TERM=xterm-256color
 
-# Ruby
-export PATH="/usr/local/opt/ruby/bin:$PATH"
-export PATH="$HOME/.gem/ruby/2.6.0/bin:$PATH"
