@@ -3,9 +3,9 @@ all: shell git tmux vim ## Install all the dotfiles.
 
 .PHONY: shell
 shell: ## Install the shell related dotfiles.
-	ln -sfn $(CURDIR)/.zshrc $(HOME)/.zshrc;
+	ln -sfn $(CURDIR)/.bashrc $(HOME)/.bashrc;
+	ln -sfn $(CURDIR)/.bash_profile $(HOME)/.bash_profile;
 	ln -sfn $(CURDIR)/.dockerfunc $(HOME)/.dockerfunc;
-	ln -sfn $(CURDIR)/starship.toml $(HOME)/.config/starship.toml;
 
 .PHONY: vim
 vim: ## Install the vim related dotfiles.
