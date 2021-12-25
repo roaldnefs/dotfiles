@@ -6,6 +6,7 @@ shell: ## Install the shell related dotfiles.
 	ln -sfn $(CURDIR)/.bashrc $(HOME)/.bashrc;
 	ln -sfn $(CURDIR)/.bash_profile $(HOME)/.bash_profile;
 	ln -sfn $(CURDIR)/.dockerfunc $(HOME)/.dockerfunc;
+	ln -sfn $(CURDIR)/.aliases $(HOME)/.aliases;
 
 .PHONY: vim
 vim: ## Install the vim related dotfiles.
