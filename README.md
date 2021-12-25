@@ -42,14 +42,6 @@ Featured Projects: [gitignore](https://github.com/roaldnefs/gitignore).
 ## Tools
 These **dotfiles** make use of the following tools:
 
-[<img align="left" height="94px" width="94px" alt="starship" src="https://avatars.githubusercontent.com/u/49654870"/>](https://starship.rs/)
-
-[**starship**](https://starship.rs/) \
-The minimal, blazing-fast, and infinitely customizable prompt for any shell!
-<br/>
-<br/>
-<br/>
-
 [<img align="left" height="94px" width="94px" alt="gitignore" src="https://avatars.githubusercontent.com/u/6523325"/>](https://github.com/roaldnefs/gitignore)
 
 [**gitignore**](https://github.com/roaldnefs/gitignore) \
