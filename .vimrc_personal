@@ -5,25 +5,27 @@ noremap <Left> <Nop>
 noremap <Right> <Nop>
 
 " Set color scheme
-set background=light
 colorscheme one
+set background=light
 highlight Normal ctermbg=None
 " Allow italic fonts. This might require additional configuration for the
 " terminal and applications, see:
 " https://alexpearce.me/2014/05/italics-in-iterm2-vim-tmux/
 let g:one_allow_italics = 1
-highlight Comment cterm=italic
+highlight Comment cterm=italic gui=italic
 
 " Airline
 let g:airline_theme = 'one'
+let g:airline_powerline_fonts = 1
+let g:airline_skip_empty_sections = 1
+
+let g:airline_left_sep = ''
+let g:airline_right_sep = ''
+
+" Airlne tabline
 let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#tab_nr_type = 1
-let g:airline#extensions#branch#enabled = 1
-let g:airline_left_sep = ' '
-let g:airline_right_sep = ' '
-let g:airline_section_warning = ''
-let g:airline_section_y = ''
-let g:airline_section_x = ''
+
+" Statusbar
 set laststatus=2
 
 " NERDTree
@@ -38,4 +40,3 @@ call matchadd('ColorColumn', '\%81v', 100)
 
 " Turn hybrid line numbers.
 set number relativenumber
-
