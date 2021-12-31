@@ -50,10 +50,10 @@ Tool for downloading `.gitignore` templates.
 <br/>
 <br/>
 
-[<img align="left" height="94px" width="94px" alt="gitignore" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Vimlogo.svg/544px-Vimlogo.svg.png"/>](https://github.com/roaldnefs/.vim)
+[<img align="left" height="94px" width="94px" alt="neovim" src="https://avatars.githubusercontent.com/u/6471485"/>](https://neovim.io/)
 
-[**vim**](https://github.com/roaldnefs/.vim) \
-The ubiquitous text editor. The vim dotfiles are stored in a separate repository: [roaldnefs/.vim](https://github.com/roaldnefs/.vim)
+[**neovim**](https://neovim.io/) \
+The hyperextensible Vim-based text editor.
 <br/>
 <br/>
 
