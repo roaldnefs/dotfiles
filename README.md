@@ -63,6 +63,9 @@ The repository includes a **Makefile** to create all the required symbolic links
 ```console
 $ make help
 all                            Install all the dotfiles.
+git                            Install the git related dotfiles.
 shell                          Install the shell related dotfiles.
+tmux                           Install the tmux related dotfiles.
+vim                            Install the vim related dotfiles.
 $ make all
 ```
