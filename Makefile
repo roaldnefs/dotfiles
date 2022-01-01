@@ -3,15 +3,13 @@ all: shell git tmux vim ## Install all the dotfiles.
 
 .PHONY: shell
 shell: ## Install the shell related dotfiles.
-	ln -sfn $(CURDIR)/.bashrc $(HOME)/.bashrc;
-	ln -sfn $(CURDIR)/.bash_profile $(HOME)/.bash_profile;
+	ln -sfn $(CURDIR)/.zsrhc $(HOME)/.zsrhc
+	ln -sfn $(CURDI)/zsh.d $(HOME)/.config/zsh.d
 	ln -sfn $(CURDIR)/.dockerfunc $(HOME)/.dockerfunc;
-	ln -sfn $(CURDIR)/.aliases $(HOME)/.aliases;
 
 .PHONY: vim
 vim: ## Install the vim related dotfiles.
-	[ -d $(HOME)/.vim ] || git clone --recursive git@github.com:roaldnefs/.vim.git $(HOME)/.vim
-	ln -sfn $(CURDIR)/.vimrc_personal $(HOME)/.vimrc_personal;
+	ln -sfn $(CURDIR)/nvim $(HOME)/.config/nvim;
 
 .PHONY: tmux
 tmux: ## Install the tmux related dotfiles.
