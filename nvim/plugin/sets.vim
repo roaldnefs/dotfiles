@@ -4,6 +4,11 @@ set path+=**
 
 " Display all matching files when we tab complete.
 set wildmenu
+set wildmode=list:full
+
+set wildignore+=.git,.svn       " Version control
+set wildignore+=.DS_Store       " OSX
+set wildignore+=*.pyc           " Python
 
 set guicursor=
 
