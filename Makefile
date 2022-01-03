@@ -4,7 +4,7 @@ all: shell git tmux vim ## Install all the dotfiles.
 .PHONY: shell
 shell: ## Install the shell related dotfiles.
 	ln -sfn $(CURDIR)/.zsrhc $(HOME)/.zsrhc
-	ln -sfn $(CURDI)/zsh.d $(HOME)/.config/zsh.d
+	ln -sfn $(CURDIR)/zsh.d $(HOME)/.config/zsh.d
 	ln -sfn $(CURDIR)/.dockerfunc $(HOME)/.dockerfunc;
 
 .PHONY: vim
