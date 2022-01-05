@@ -1,10 +1,12 @@
-
 call plug#begin('~/.vim/plugged')
 Plug 'gruvbox-community/gruvbox'
 Plug 'airblade/vim-gitgutter'
 call plug#end()
 
 let mapleader = " "
+
+" Toggle spell checking.
+map <leader>ss :setlocal spell!<cr>
 
 fun! TrimWhitespace()
     let l:save = winsaveview()
